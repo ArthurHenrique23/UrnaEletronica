@@ -1,0 +1,221 @@
+body {
+    position: absolute;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font: normal 15pt;
+    background-color: rgb(191, 185, 185)
+}
+
+.cabecalho {
+    text-shadow: 5px 5px 10px black;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 15px;
+    margin-left: 50vw;
+    transform: translate(-50%);
+}  
+
+main {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 810px;
+    height: 450px;
+    border-radius: 10px;
+    left: 50vw;
+    transform: translateX(-50%);
+}
+
+.tela {
+    position: absolute;
+    background: linear-gradient(45deg, white, rgb(218, 219, 219));
+    width: 500px;
+    height: 400px;
+    border: 1px solid rgb(196, 193, 193);
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.painel {
+    position: absolute;
+    width: 250px;
+    height: 330px;
+    background-color: rgb(49, 49, 49);
+    margin-top: -335px;
+    margin-left: 524px;
+}
+
+/* Tela Exibição*/
+#digito1, #digito2, #digitado1, #digitado2 {
+    background: none;
+    margin-top: 20px;
+    text-align: center;
+    width: 30px;
+    font-size: 20pt;
+    border: 1px solid;
+    animation: piscar 1000ms linear infinite;
+}
+
+.logorfb {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 340px;
+    margin-top: -404px;
+}
+
+.logomsg {
+    position: absolute;
+    margin-left: 642px;
+    margin-top: -408px;
+}
+
+.info-text {
+    text-align: left;
+    margin-top: 87px;
+    margin-left: 12p
+}
+
+.numero {
+    background-color: #242933;
+    color: #fff;
+    margin-top: 15px;
+    border: 2px solid #000;
+    width: 50px;
+    height: 45px;
+    box-shadow: 3px 3px 2px rgb(6, 7, 8);
+}
+
+.numero:hover {
+    background-color: #000;
+    cursor: pointer;
+}
+
+#branco {
+    background-color: #fff;
+    margin-top: 25px;
+    border: none;
+    height: 50px;
+    box-shadow: 3px 3px 2px rgb(6, 7, 8);
+
+}
+
+#branco:hover {
+    background-color: #c5c5c5;
+    cursor: pointer;
+}
+
+#corrige {
+    background-color: rgb(215, 55, 55);
+    margin-top: 25px;
+    border: none;
+    height: 50px;
+    box-shadow: 3px 3px 2px rgb(6, 7, 8);
+}
+
+#corrige:hover {
+    background-color: #ff0000;
+    cursor: pointer;
+}
+
+#confirma {
+    background-color: rgba(46, 155, 59, 0.797);
+    margin-top: 25px;
+    border: none;
+    height: 50px;
+    box-shadow: 3px 3px 2px rgb(6, 7, 8);
+}
+
+#confirma:hover {
+    background-color: #48ff00;
+    cursor: pointer;
+}
+
+/* sumir */
+.sumir {
+    visibility: hidden;
+}
+
+/* Tela */
+.telainicial {
+    position: absolute;
+    text-align: center;
+    margin-left: 150px;
+}
+
+/* Candidatos */
+.candidato {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.num-candidato {
+    margin-top: 10px;
+}
+
+.text-candidato {
+    position: absolute;
+    margin-top: 40px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.foto-candidato {
+    position: absolute;
+    align-self: flex-end;
+    width: 80px;
+    height: 110px;
+    border: 1px solid #242933;
+    padding: 5px;
+    top: 70px;
+    right: 10px;
+}
+
+.foto-vice {
+    position: absolute;
+    align-self: flex-end;
+    width: 80px;
+    height: 110px;
+    border: 1px solid #242933;
+    padding: 5px;
+    top: 190px;
+    right: 10px;
+}
+
+/* Branco e Inválido*/
+.cliquebranco {
+    position: absolute;
+    margin-top: 34px;
+    margin-left: 110px;
+}
+
+.invalido {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 100px;
+}
+
+.cliqueconfirma {
+    font-size: 2em;
+    margin-top:-20px;
+}
+
+/* Animações */
+@keyframes piscar {
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}

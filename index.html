@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="cabecalho">Urna Eletrônica</h1>
+    </header>
+    <main>
+        <div class="tela">
+            <div class="telainicial">
+                <h2 class="text-presidente">Presidente</h2>
+                <input type="text" name="digito" value="" id="digito1" maxlength="1" readonly>
+                <input type="text" name="digito" value="" id="digito2" maxlength="1" readonly>
+            </div>
+            <!-- Informações dos Candidatos -->
+            <div class="candidatos sumir">
+                <div class="num-candidato">
+                    <span>SEU VOTO PARA</span>
+                    <p><strong>PRESIDENTE</strong></p>
+                    <input type="text" name="digitado" value="2" id="digitado1" maxlength="1" readonly>
+                    <input type="text" name="digitado" value="2" id="digitado2" maxlength="1" readonly>
+                </div>
+
+                <div class="text-candidato">
+                    <p><strong>Nome: </strong>Cristiano Ronaldo</p>
+                    <p><strong>Partido: </strong>Lendas</p>
+                    <p><strong>Slogan: </strong>Gol</p>
+                    <p><strong>Vice-Presidente: </strong>Lionel Messi</p>
+                </div>
+                <div>
+                    <img class="foto-candidato" src="Candidatos/1/10001874.jpg" alt="Presidente">
+                    <img class="foto-vice"  src="Candidatos/1/Lionel Andrés Messi.png" alt="Vice">
+                </div>
+                
+            </div>
+            <!-- Voto em Branco -->
+            <div class="cliquebranco sumir">
+                <h1>VOTO EM BRANCO</h1>
+            </div>
+            <!-- Voto em Inválido -->
+            <div class="invalido sumir">
+                <p class="digito-invalido">Você digitou: </p>
+                <h1 class="num-invalido">NÚMERO INVALIDO</h1>
+            </div>
+            <div class="cliqueconfirma sumir">
+                <h1>FIM</h1>
+            </div>
+            <!-- Informações de Voto -->
+            <div class="info-text">
+                <hr>
+                <p>
+                    Aperte a tecla
+                    <br>
+                    <strong>VERDE</strong> para CONFIRMAR este Voto
+                    <br>
+                    <strong>LARANJA</strong> para REINICIAR este voto
+                </p>
+            </div>
+            <!-- Conteúdo acima do painel de botões-->
+            <div class="logo">
+                <img src="Candidatos/logojusticaeleitoral.png" alt="logojusticaeleitoral" class="logorfb">
+                <h4 class="logomsg">
+                    Justiça<br>Eleitoral<br>Brasileira
+                </h4>
+            </div>
+            <!-- Painel de Botões -->
+            <div class="painel">
+                <input class="numero" type="button" name="number" value="1" id="um" onclick='digitar(1)'>
+                <input class="numero" type="button" name="number" value="2" id="dois" onclick='digitar(2)'>
+                <input class="numero" type="button" name="number" value="3" id="tres" onclick='digitar(3)'>
+                <input class="numero" type="button" name="number" value="4" id="quatro" onclick='digitar(4)'>
+                <input class="numero" type="button" name="number" value="5" id="cinco" onclick='digitar(5)'>
+                <input class="numero" type="button" name="number" value="6" id="seis" onclick='digitar(6)'>
+                <input class="numero" type="button" name="number" value="7" id="sete" onclick='digitar(7)'>
+                <input class="numero" type="button" name="number" value="8" id="oito" onclick='digitar(8)'>
+                <input class="numero" type="button" name="number" value="9" id="nove" onclick='digitar(9)'>
+                <input class="numero" type="button" name="number" value="0" id="zero" onclick='digitar(0)'>
+                <br>
+                
+                <input class="branco" type="button" value="BRANCO" id="branco" onclick="branco()">
+                <input class="corrige" type="button" value="CORRIGE" id="corrige" onclick="corrige()">
+                <input class="confirma" type="button" value="CONFIRMA" id="confirma">
+
+            </div>
+        </div>
+    </main>
+    <footer>WebDev Supergeeks</footer>
+</body>
+</html>
